@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Vermicompost Details - Khaad Bazar</title>
+  <link href="bootstrap-5.3.3-dist/css/bootstrap.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    body {
+      padding: 20px;
+    }
+    .vermi-img {
+      max-width: 60%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .badge {
+      font-size: 1rem;
+      padding: 0.6em 1em;
+    }
+  </style>
+</head>
+<body>
+
+<div id="loader" class="text-center">
+  <div class="spinner-border text-success" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <p>Loading Vermicompost Details...</p>
+</div>
+
+<div class="container d-none" id="content">
+
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="Home.html">Home</a></li>
+      <li class="breadcrumb-item"><a href="process.html">Khaad Types</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Vermicompost</li>
+    </ol>
+  </nav>
+
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h2 class="text-success m-0">🌿 Vermicompost</h2>
+    <a href="Home.html" class="btn btn-success">🏠 Home</a>
+  </div>
+
+  <img src="vermicompost.jpg" alt="Vermicompost Image" class="vermi-img mb-4">
+
+  <div class="mb-3">
+    <span class="badge bg-success">Organic</span>
+    <span class="badge bg-secondary">Eco-friendly</span>
+    <span class="badge bg-info text-dark">Nutrient-rich</span>
+  </div>
+
+  <h4>🧪 Requirements</h4>
+  <ul>
+    <li>Earthworms (Eisenia fetida)</li>
+    <li>Organic waste (vegetable peels, leaves, paper)</li>
+    <li>Moisture-retaining bin or pit</li>
+    <li>Partial shade or shelter</li>
+    <li>Proper aeration</li>
+  </ul>
+
+  <h4>🔧 How to Make Vermicompost</h4>
+  <table class="table table-bordered">
+    <thead class="table-success">
+      <tr>
+        <th>Step</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td>Prepare a bin or pit with partial shade and ventilation.</td></tr>
+      <tr><td>2</td><td>Place a bedding layer (coconut coir, paper, dry leaves).</td></tr>
+      <tr><td>3</td><td>Add organic waste in layers (avoid oily/spicy food).</td></tr>
+      <tr><td>4</td><td>Introduce earthworms and lightly moisten the mixture.</td></tr>
+      <tr><td>5</td><td>Cover with jute sack and maintain moisture regularly.</td></tr>
+      <tr><td>6</td><td>After 40-50 days, dark, granular compost will be ready.</td></tr>
+    </tbody>
+  </table>
+
+  <h4>⏱ Time Required</h4>
+  <p>Approximately <strong>40 to 50 days</strong> under optimal conditions.</p>
+
+  <h4>🌟 Advantages</h4>
+  <ul>
+    <li>Improves soil texture and water retention</li>
+    <li>Boosts microbial activity in the soil</li>
+    <li>Completely organic and chemical-free</li>
+    <li>Reduces household waste</li>
+  </ul>
+
+  <h4>💰 Estimated Price</h4>
+  <p>The average market price of vermicompost is approximately <strong>₹8 to ₹12 per kg</strong>. Price may vary based on quality, packaging, and location.</p>
+
+</div>
+
+<script>
+  window.addEventListener("load", function () {
+    setTimeout(() => {
+      document.getElementById("loader").classList.add("d-none");
+      document.getElementById("content").classList.remove("d-none");
+    }, 1000);
+  });
+</script>
+
+</body>
+</html>

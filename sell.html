@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sell on Khaad Bazar</title>
+  <link href="bootstrap-5.3.3-dist/css/bootstrap.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    body {
+      background-color: white;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .header {
+      background-color: #e8f5e9;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .header h1 {
+      color: #2e7d32;
+    }
+    .btn-home {
+      background-color: #4caf50;
+      color: white;
+      margin: 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+    }
+    .btn-home:hover {
+      background-color: #388e3c;
+    }
+    .content-section {
+      background-color: #ffffff;
+      padding: 40px 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      margin-bottom: 30px;
+    }
+    .section-title {
+      text-align: center;
+      color: #2e7d32;
+      margin-bottom: 30px;
+    }
+    .action-btns {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 30px 0;
+    }
+    .testimonial {
+      background-color: #f1f8e9;
+      border-left: 5px solid #66bb6a;
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 8px;
+    }
+    .testimonial small {
+      color: #555;
+    }
+    .steps-list {
+      list-style: decimal;
+      padding-left: 20px;
+    }
+    .steps-list li {
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Sell Your Organic Khaad on Khaad Bazar</h1>
+    <p>Join the green movement and turn your compost into income.</p>
+  </div>
+
+  <div class="container">
+    <a href="Home.html" class="btn-home">🏠 Home</a>
+
+    <div class="content-section">
+      <h2 class="section-title">Steps to Start Selling</h2>
+      <ol class="steps-list">
+        <li><strong>Register</strong> yourself as a seller using your name, phone, and email.</li>
+        <li><strong>List your Khaad</strong> by entering details like name, quantity, price, and a short description.</li>
+        <li><strong>Get notified</strong> when customers show interest in your listing.</li>
+      </ol>
+    </div>
+
+    <div class="action-btns">
+      <button class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#registrationModal" title="Click to register as a seller" data-bs-placement="left">Register</button>
+      <button class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#listingModal" title="Click to list your Khaad for sale" data-bs-placement="right">List Khaad</button>
+    </div>
+    
+
+    <div class="content-section">
+      <h2 class="section-title">Why Sell on Khaad Bazar?</h2>
+      <ul>
+        <li>🌱 100% free platform to support eco-entrepreneurs</li>
+        <li>📞 Direct buyer-seller communication</li>
+        <li>💸 Timely and secure payments after successful sale</li>
+        <li>🌍 Reach buyers across India, even in rural areas</li>
+        <li>🪱 Ideal for home composters, farmers, and small-scale producers</li>
+        <li>📷 Option to upload images and increase visibility</li>
+      </ul>
+    </div>
+
+    <div class="content-section">
+      <h2 class="section-title">Seller Feedback</h2>
+      <div class="text-center mb-3">
+        <button class="btn btn-outline-success" type="button" data-bs-toggle="collapse" data-bs-target="#feedbackCollapse" aria-expanded="false" aria-controls="feedbackCollapse">
+          View Feedback
+        </button>
+      </div>
+      <div class="collapse" id="feedbackCollapse">
+        <div class="testimonial">
+          <p>"My khaad sales increased 3x after joining Khaad Bazar. Simple and effective!"</p>
+          <small>- Suresh Kumar, Haryana</small>
+        </div>
+        <div class="testimonial">
+          <p>"I'm a student making compost at home. This site gave me an audience for my work."</p>
+          <small>- Meena Rathore, Madhya Pradesh</small>
+        </div>
+        <div class="testimonial">
+          <p>"I listed my vermicompost, and it sold within a week. Great platform!"</p>
+          <small>- Devansh Yadav, Rajasthan</small>
+        </div>
+      </div>
+    </div>
+    
+
+  <div class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby="regLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content border-success">
+        <div class="modal-header bg-success text-white">
+          <h5 class="modal-title" id="regLabel">Register</h5>
+          <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form id="registrationForm">
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="regName" class="form-label">Name</label>
+              <input type="text" class="form-control" id="regName" required>
+            </div>
+            <div class="mb-3">
+              <label for="regEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="regEmail" required>
+            </div>
+            <div class="mb-3">
+              <label for="regPhone" class="form-label">Phone</label>
+              <input type="tel" class="form-control" id="regPhone" required>
+            </div>
+            <div class="mb-3">
+              <label for="regPassword" class="form-label">Password</label>
+              <input type="password" class="form-control" id="regPassword" required>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-success">Register</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="listingModal" tabindex="-1" aria-labelledby="listLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content border-success">
+        <div class="modal-header bg-success text-white">
+          <h5 class="modal-title" id="listLabel">List Your Khaad</h5>
+          <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form id="sellForm">
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="productName" class="form-label">Product Name</label>
+              <input type="text" class="form-control" id="productName" required>
+            </div>
+            <div class="mb-3">
+              <label for="quantity" class="form-label">Quantity (in KG)</label>
+              <input type="number" class="form-control" id="quantity" required>
+            </div>
+            <div class="mb-3">
+              <label for="price" class="form-label">Price per KG (₹)</label>
+              <input type="number" class="form-control" id="price" required>
+            </div>
+            <div class="mb-3">
+              <label for="description" class="form-label">Short Description</label>
+              <textarea class="form-control" id="description" rows="3" required></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="contact" class="form-label">Contact Info</label>
+              <input type="text" class="form-control" id="contact" required>
+            </div>
+            <div class="mb-3">
+              <label for="imageUpload" class="form-label">Upload Image</label>
+              <input type="file" class="form-control" id="imageUpload" accept="image/*">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-success">List Product</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="regSuccess" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content border-success">
+        <div class="modal-header bg-success text-white">
+          <h5 class="modal-title">Registration Successful</h5>
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">You're now registered with Khaad Bazar!</div>
+        <div class="modal-footer">
+          <button class="btn btn-outline-success" data-bs-dismiss="modal">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="sellSuccess" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content border-success">
+        <div class="modal-header bg-success text-white">
+          <h5 class="modal-title">Product Listed</h5>
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">Your Khaad is now live for buyers to see!</div>
+        <div class="modal-footer">
+          <button class="btn btn-outline-success" data-bs-dismiss="modal">Great!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const tooltipTriggerList = document.querySelectorAll('[title]');
+tooltipTriggerList.forEach(el => new bootstrap.Tooltip(el));
+
+    document.getElementById("registrationForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      bootstrap.Modal.getInstance(document.getElementById('registrationModal')).hide();
+      const successModal = new bootstrap.Modal(document.getElementById('regSuccess'));
+      successModal.show();
+      this.reset();
+    });
+
+    document.getElementById("sellForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      bootstrap.Modal.getInstance(document.getElementById('listingModal')).hide();
+      const successModal = new bootstrap.Modal(document.getElementById('sellSuccess'));
+      successModal.show();
+      this.reset();
+    });
+
+
+  </script>
+
+</body>
+</html>
